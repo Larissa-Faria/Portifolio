@@ -328,3 +328,81 @@ header {
     opacity: 1;
     visibility: visible;
 }
+.secao_contato {
+    width: 100%;
+    height: 100vh;
+    background-color: #272727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato_wrapper {
+    width: 60%;
+    height: 30rem;
+    display: flex;
+    box-shadow: 0 2rem 3rem rgba(0,0,0,0.5);
+}
+.contato_left{
+    width: 35%;
+    background-image:linear-gradient(rgba(15,15,15, 0.6), rgba(22,22,22, 0.9)), 
+    url(img/contato.jpg);
+    background-size: cover;
+}
+.contato_right {
+    width: 65%;
+    background-color: #eee;
+    padding: 1rem 3rem 3rem 3rem;
+}
+.secao_contato h1 {
+    color: #272727;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.secao_contato form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input_group {
+    position: relative;
+}
+.input_group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 3rem;
+}
+.field {
+    border: none;
+    background: transparent;
+    width: 20rem;
+    font-size: 1.5rem;
+    border-bottom: 2px dashed #636363;
+    height: 3rem;
+    outline: none;
+    margin: 2rem 0;
+}
+.field_label {
+    position: absolute;
+    left: 0;
+    top: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.field:focus ~ label {
+    top: 0;
+    font-size: 0.7rem;
+}
+.field:focus {
+    border-bottom: 1px solid;
+}
+.btn_submit {
+    text-transform: uppercase;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.2rem;
+     
+}
