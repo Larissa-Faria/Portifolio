@@ -142,7 +142,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam odio est cumque sunt
                             reiciendis sapiente, temporibus similique, eum at nostrum, ad consequuntur nemo aut quam
                             beatae doloremque. Sequi, totam optio.</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -155,7 +155,7 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quos neque molestias tempore
                             fugiat nemo tempora temporibus distinctio labore eius debitis velit id amet sequi, aperiam
                             veritatis. Eligendi, qui in?</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
                 <div class="card">
@@ -168,7 +168,7 @@
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt accusamus similique illum
                             ipsam obcaecati commodi sequi, adipisci amet nam numquam explicabo quidem eveniet officiis
                             esse, ab architecto cupiditate, aliquid dicta!</p>
-                        <button>Saiba Mais</button>
+                        <button class="btn">Saiba Mais</button>
                     </div>
                 </div>
             </div>
@@ -192,11 +192,37 @@
                             <textarea class="field" id="mensagem"></textarea>
                             <label class="field_label" for="mensagem">Mensagem</label>
                         </div>
-                        <button class="btn_submit" type="submit">Enviar</button>
+                        <button class="btn btn_submit" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
+        <section class="secao_orcamento" id="orcamento">
+            <div class="orcamento-wrapper">
+              <h1>Faça um orçamento</h1>
+              <form>
+                <label for="qtde">Qtde de Páginas</label>
+                <input type="number" min="1" name="qtde" id="qtde">
+                <label for="js">Preciso de um script JS</label>
+                <input type="checkbox" name="js" id="js">
+                <label>Layout</label>
+                <div class="group_layout">
+                  <div>
+                    <input type="radio" name="layout" id="layout_sim">
+                    <label for="layout_sim">Preciso de um layout</label>
+                  </div>
+                  <div>
+                    <input type="radio" name="layout" id="layout_nao">
+                    <label for="layout_nao">Já tenho um layout</label>
+                  </div>
+                </div>
+                <label for="prazo">Prazo</label>
+                <input type="range" name="prazo" id="prazo" min="1" max="10">
+                <label id="preco">R$ 0,00</label>
+                <button class="btn btn_orcamento" type="submit">Enviar</button>
+              </form>
+            </div>
+          </section>
     </div>
 </body>
 <script src="script.js"></script>
